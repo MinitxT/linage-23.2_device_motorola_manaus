@@ -9,7 +9,9 @@ DEVICE_PATH := device/motorola/manaus
 # Audio
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
-    $(call inherit-product, hardware/dolby/dolby.mk)
+
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
