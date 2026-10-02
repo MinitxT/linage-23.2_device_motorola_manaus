@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_manaus.mk
+    $(LOCAL_DIR)/clover_manaus.mk
 
     COMMON_LUNCH_CHOICES := \
     clover_manaus-user \
