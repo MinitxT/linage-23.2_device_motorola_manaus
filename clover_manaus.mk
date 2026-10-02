@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: lineageOS
+# SPDX-FileCopyrightText: cloverOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,28 +11,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/motorola/manaus/device.mk)
 
-# Inherit some common lineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common cloverOS stuff.
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_manaus
+PRODUCT_NAME := clover_manaus
 PRODUCT_DEVICE := manaus
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola edge 40 neo
 
-#lineage build flags
-lineage_MAINTAINER := MinitxT
+#clover build flags
+COVER_MAINTAINER := MinitxT
 TARGET_ENABLE_BLUR := true
 TARGET_HAS_UDFPS := true
-TARGET_USE_GPHOTOS := true
-TARGET_OPTIMIZED_DEXOPT := true
-TARGET_USE_MAPS := true
-TARGET_CUSTOM_UDFPS := true
-TARGET_USE_GPHOTOS := true
-TARGET_USE_FILES := true
-
+WITH_GMS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 

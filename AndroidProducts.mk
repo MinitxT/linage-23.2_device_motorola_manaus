@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_manaus.mk
 
     COMMON_LUNCH_CHOICES := \
-    lineage_hotdogb-user \
-    lineage_hotdogb-userdebug \
-    lineage_hotdogb-eng
+    clover_manaus-user \
+    clover_manaus-userdebug \
+    clover_manaus-eng
