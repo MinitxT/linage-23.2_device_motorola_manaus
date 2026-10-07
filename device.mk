@@ -10,6 +10,15 @@ DEVICE_PATH := device/motorola/manaus
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Lunaris Dolby
+PRODUCT_PACKAGES += \
+    LunarisDolby
+
+# KeyHandler
+PRODUCT_PACKAGES += \
+    KeyHandler
+
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=24m \

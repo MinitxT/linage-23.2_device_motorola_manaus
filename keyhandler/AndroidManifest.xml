@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.lineageos.settings.device"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:permission="android.permission="android.permission.BIND_QUICK_SETTINGS_TILE" />
+    <uses-permission android:permission="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:permission="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:permission="android.permission.VIBRATE" />
+    <uses-permission android:permission="android.permission.WAKE_LOCK" />
+
+    <application
+        android:label="KeyHandler"
+        android:persistent="true">
+
+        <protected-broadcast android:name="com.android.systemui.doze.pulse" />
+
+    </application>
+</manifest>
