@@ -13,6 +13,10 @@
     <uses-permission android:permission="android.permission.VIBRATE" />
     <uses-permission android:permission="android.permission.WAKE_LOCK" />
 
+    <!-- Flashlight / Camera permissions -->
+    <uses-permission android:permission="android.permission.CAMERA" />
+    <uses-permission android:permission="android.permission.FLASHLIGHT" />
+
     <application
         android:label="KeyHandler"
         android:persistent="true">
