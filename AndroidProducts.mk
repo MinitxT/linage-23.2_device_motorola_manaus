@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/clover_manaus.mk
+    $(LOCAL_DIR)/custom_manaus.mk
 
     COMMON_LUNCH_CHOICES := \
-    clover_manaus-user \
-    clover_manaus-userdebug \
-    clover_manaus-eng
+    custom_manaus-user \
+    custom_manaus-userdebug \
+    custom_manaus-eng
