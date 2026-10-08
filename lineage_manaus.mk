@@ -14,7 +14,18 @@ $(call inherit-product, device/motorola/manaus/device.mk)
 # Inherit some common lineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+LUNARIS_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := true
+TARGET_USE_GPHOTOS := true
+TARGET_OPTIMIZED_DEXOPT := true
+TARGET_USE_MAPS := true
+TARGET_CUSTOM_UDFPS := true
+TARGET_USE_GPHOTOS := true
+TARGET_USE_FILES := true
+USE_REALITY_ENGINE := true
+USE_ADVANCED_DISPLAY_COLOR := true
 
 PRODUCT_NAME := lineage_manaus
 PRODUCT_DEVICE := manaus
