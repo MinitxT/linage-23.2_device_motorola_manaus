@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: LineageOS
+# SPDX-FileCopyrightText: customOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,12 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/motorola/manaus/device.mk)
 
-# Inherit some common lineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common customOS stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_manaus
+PRODUCT_NAME := custom_manaus
 PRODUCT_DEVICE := manaus
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_BRAND := motorola
