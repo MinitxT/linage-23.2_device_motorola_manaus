@@ -23,7 +23,7 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola edge 40 neo
 
 #lineage build flags
-lineage_MAINTAINER := MinitxT
+_MAINTAINER := MinitxT
 TARGET_ENABLE_BLUR := true
 TARGET_HAS_UDFPS := true
 TARGET_USE_GPHOTOS := true
@@ -32,6 +32,8 @@ TARGET_USE_MAPS := true
 TARGET_CUSTOM_UDFPS := true
 TARGET_USE_GPHOTOS := true
 TARGET_USE_FILES := true
+USE_REALITY_ENGINE := true
+USE_ADVANCED_DISPLAY_COLOR := true
 
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola

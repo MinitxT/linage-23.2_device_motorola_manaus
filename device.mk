@@ -1,4 +1,4 @@
-#
+x#
 # Copyright (C) The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -10,14 +10,14 @@ DEVICE_PATH := device/motorola/manaus
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Dalvik
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=24m \
-    dalvik.vm.heapgrowthlimit=256m \
-    dalvik.vm.heapsize=512m \
-    dalvik.vm.heaptargetutilization=0.46 \
-    dalvik.vm.heapminfree=8m \
-    dalvik.vm.heapmaxfree=48m
+$(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
+
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,144)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60
 
 # Init
 PRODUCT_PACKAGES += \

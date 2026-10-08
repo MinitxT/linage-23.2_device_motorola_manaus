@@ -1,2 +1,7 @@
 # Camera
 persist.vendor.camera.physical.num=3
+
+
+
+# maintainer
+ro.lunaris.maintainer=Minit | ミニット
