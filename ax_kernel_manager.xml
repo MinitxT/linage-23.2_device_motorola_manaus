@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Axion Kernel Manager config — MediaTek MT6879 (Dimensity 7030)
+    Motorola Edge 40 Neo (manaus)
+
+      Little Cluster (policy0: cpu0-5, 6 cores)
+        400 MHz - 2000 MHz
+
+      Big Cluster (policy6: cpu6-7, 2 cores)
+        450 MHz - 2500 MHz
+
+      GPU (Mali-G610)
+        385 MHz - 1000 MHz
+-->
+<kernel-manager>
+
+    <cpu
+        id="little"
+        group="Little CPU"
+        minId="axion_min_freq"
+        maxId="axion_max_freq"
+        governorId="little_cpu_governor"
+        minNode="/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq"
+        maxNode="/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq"
+        availablePath="/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies"
+        governorNode="/sys/devices/system/cpu/cpufreq/policy0/scaling_governor"
+        governorAvailablePath="/sys/devices/system/cpu/cpufreq/policy0/scaling_available_governors" />
+
+    <cpu
+        id="big"
+        group="Big CPU"
+        minId="axion_min_freq_big"
+        maxId="axion_max_freq_big"
+        governorId="big_cpu_governor"
+        minNode="/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq"
+        maxNode="/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq"
+        availablePath="/sys/devices/system/cpu/cpufreq/policy6/scaling_available_frequencies"
+        governorNode="/sys/devices/system/cpu/cpufreq/policy6/scaling_governor"
+        governorAvailablePath="/sys/devices/system/cpu/cpufreq/policy6/scaling_available_governors" />
+
+    <gpu
+        node="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali"
+        currentNode="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali/cur_freq"
+        usageNode="/sys/module/ged/parameters/gpu_loading"
+        minNode="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali/min_freq"
+        maxNode="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali/max_freq"
+        availablePath="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali/available_frequencies"
+        governorNode="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali/governor"
+        governorAvailablePath="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali/available_governors"
+        frequencyMultiplier="1" />
+
+</kernel-manager>
