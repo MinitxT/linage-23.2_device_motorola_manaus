@@ -23,7 +23,7 @@ AXION_CAMERA_REAR_INFO := 50,13
 AXION_CAMERA_FRONT_INFO := 32
 
 # Maintainer name
-AXION_MAINTAINER := MiniT|ミニット
+AXION_MAINTAINER := MiniTㅤ|ミニット
 
 # Processor name 
 AXION_PROCESSOR := Mediatek_Dimensity_7030
